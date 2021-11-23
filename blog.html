@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Daniel B. Martinez</title>
+<meta charset="UTF-8">
+<meta name="author" content="Daniel Blaine Martinez">
+<meta http-equiv="refresh" content="30">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style-sheet.css">
+
+<style>
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+
+<body>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+        <img class="w3-image" src="photos/AlabamaHills.jpeg" alt="Me" width="1500" height="600">
+        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-black w3-center">
+            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Daniel Blaine Martinez</h1>
+            <h5 class="w3-hide-large" style="white-space:nowrap">Daniel Blaine Martinez</h5>
+            <h3 class="w3-hide-medium w3-hide-small w3-xlarge">BLOG</h3>
+        </div>
+
+        <!-- Navbar (placed at the bottom of the header image) -->
+        <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+            <a href="https://dbmartinez.com" class="w3-bar-item w3-button">Home</a>
+            <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+            <a href="programming.html" class="w3-bar-item w3-button">Programming</a>
+        </div>
+    </header>
+
+    <!-- Navbar on small screens -->
+    <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+        <div class="w3-bar w3-light-grey">
+            <a href="https://dbmartinez.com" class="w3-bar-item w3-button">Home</a>
+            <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+            <a href="programming.html" class="w3-bar-item w3-button">Programming</a>
+        </div>
+    </div>
+
+     <!-- Page content -->
+    <div class="w3-content w3-padding-large w3-margin-top" id="blog">
+
+        <p style="text-align:center";><u>Tech/Photography/Other related news</u><br></p>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>What Camera Should I Start With?</h2>
+            <h5>November 7, 2021</h5>
+            <img class="w3-image" src="photos/cannont7.jpeg" alt="canon camera" width="300" height="300">
+            <details>
+            <summary>Click for summary</summary>
+            <p>The Canon Rebel T7 is by far the best DSLR camera for any beginner. Most people are too scared to 
+                try out a DSLR camera because typically they're associated with above average skilled photographers. 
+                But this camera is definitely a camera anyone can learn and get extremely insane photos with some practice. 
+                Did I forget to mention that this camera also has full HD video recording capabilities. If you’re new to 
+                photography or need a device that will record your videos for Youtube, etc. I highly recommend this camera 
+                for you and to improve your skills. With its retail price set at $449.99, it's quite affordable and well 
+                worth the price. Click the link below to see the specifications for this camera.</p>
+            <a href="https://www.usa.canon.com/internet/portal/us/home/products/details/cameras/eos-dslr-and-mirrorless-cameras/dslr/eos-rebel-t7-ef-s-18-55mm-is-ii-kit" target="_blank">Canon Rebel T7</a>
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>Rivian Goes Public</h2>
+            <h5>November 9, 2021</h5>
+            <img class="w3-image" src="photos/rivian.jpeg" alt="rivian" width="300" height="300">
+            <details>
+            <summary>Click for summary</summary>
+            <p>Can Rivian compete with Tesla, maybe, maybe not. Rivian starting trading today and its I.P.O is being valued at
+                $70 billion and offering $78 per share. There is a lot of hype surrounding this company but for some reason I 
+                smell another Nikola.</p>
+            <a href="https://www.theverge.com/2021/7/29/22599726/nikola-founder-securities-fraud-charge-milton" target="_blank">Nikola Founder Charged</a>
+            </details>
+            </div>
+        </div>
+    </div> 
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>Netflix's Cowboy Bebop Fails?</h2>
+            <h5>November 20, 2021</h5>
+            <img class="w3-image" src="photos/COWBOYBEB_Unit_08114RC4.jpeg" alt="bebop" width="300" height="300">
+            <details>
+            <summary>Click for summary</summary>
+            <p>3, 2, 1… Let’s Jam. The much awaited live action remake by Netflix has seemed to have failed with audiences 
+                everywhere. Just like everyone else I too was a little disappointed with it but nonetheless, I did enjoy it 
+                and thought it was good, not great but good. The show stayed true to the original anime in which we can all 
+                agree was awesome and rare to see. The cast and crew did a great job bringing the show to life but fight 
+                scenes and acting at times seemed dull and fake to me. Certain scenes came directly from the anime series but 
+                just felt different. But for someone looking for a decent show to watch with some ok fight scenes/entertainment 
+                then I recommend this show to you. All I have to say is that certain shows shouldn’t be remade because nothing 
+                beats the original. See you space cowboy.</p>
+                <a href="https://www.youtube.com/watch?v=ULCIHP5dc44" target="_blank">Cowboy Bebop live-action trailer</a><br>
+                <a href="https://www.youtube.com/watch?v=zXHrw28Sw34" target="_blank">WatchMojo Top 10 Cowboy Bebop Moments</a>
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>Tesla Drivers Left Unable to Start Their Cars</h2>
+            <h5>November 20, 2021</h5>
+            <details>
+            <summary>Click for summary</summary>
+            <p>Tesla drivers stated they were locked out of their cars early Saturday morning. Apparently
+                there was a power outage that struck the companies app, up to 500 users had error messages 
+                from the Tesla app and were locked out of thier vehicles. Stuart Masson, editor of The Car 
+                Expert website, told the BBC. "The app is not the only way to access the cars though". You 
+                know I've worked in automotive for a long time and not once have I ever met a person who has
+                read there owners manual, it's there for a reason. Also could this be a downward trend for the 
+                automaker, just a couple of days ago a news article was published stating that the automaker
+                ranks dead last on consumer reports reliability.</p>
+                <a href="https://www.bbc.com/news/technology-59357306" target="_blank">BBC News Article-Tesla Outage</a><br>
+                <a href="https://www.sfgate.com/tech/article/Tesla-ranks-almost-dead-last-Consumer-Reports-16632996.php" target="_blank">SFGate-Tesla Rank</a>
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>Tesla In Trouble Again</h2>
+            <h5>November 21, 2021</h5>
+            <details>
+            <summary>Click for summary</summary>
+            <p>Reuters.com published an article on November 19th, stating that the Tesla company has been subjecting
+                women to "nightmarish" working conditions. Jessica Barazza of Modesto, who works for the Tesla plant 
+                Fremont, has stated that she has delt with constant catcalls, inapproriate touching from her coworkers
+                during her night shifts. Jessica has reported these incidents to the HR deparment but nothing was done 
+                to stop the harrasment from happening. To be reported and nothing done is unacceptable, Tesla should 
+                award Jessica for all damages done to her and for the company to make major changes. Elon Musk himself 
+                has run into issues, look at the insidehook article about using the number 69 and 420. For his age to be 
+                so immature and open about it, I do think Elon has done great things especailly for the future when it comes 
+                to technology but his behaviour has been a concern. If I was a major stockholder and on the board of Tesla, 
+                I definitely would want him to step down from his role and out of the spot light.</p>
+            <a href="https://www.reuters.com/business/tesla-subjects-women-nightmarish-sexual-harassment-factory-lawsuit-2021-11-19/" target="_blank">Reuters-Tesla Sexual Harrasment Lawsuit</a><br>
+            <a href="https://www.insidehook.com/daily_brief/vehicles/elon-musk-tesla-price-cuts-69-joke" target="_blank">Tesla Model S, starting at $69,420 &#129320;</a><br>
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>Saturday Night Live - Please Don't Destroy</h2>
+            <h5>November 21, 2021</h5>
+            <img class="w3-image" src="photos/pleasedontdestroy.jpeg" alt="pleasedontdestroy" width="300" height="300">
+            <details>
+            <summary>Click for summary</summary>
+            <p>WHO THE HELL ARE THESE GUYS??? Since their debut on Satruday Night Live the 3 comedic genuises Martin Herlihy,
+                Jimmy Higgins, and Ben Marshall, have made me watch the show again. We all know with SNL that comedians come 
+                and go and things aren't the same with out them. For example, if you're a fan of the show you might remember
+                Lonely Island which featured Andy Samberg, Akiva Schaffer and Jorma Taccone. Short sketches but were very 
+                hilarious and had the same level of comedy, when they left the show so did their comedy. But once I saw the 
+                Please Don't Destroy Video on SNL, it 100% reminded me of them and brought back the same level of comedic vide 
+                with them. The show in my opinion is being held alive with them and of course the awesome Kenan Thompson.
+                <br><br>P.S. Weekend update is still good too.</p>
+            <a href="https://www.youtube.com/watch?v=iBpgqRbEFVg" target="_blank">Hard Seltzers, my favorite &#129315</a><br>
+            <a href="https://www.youtube.com/watch?v=TOq0dzxouts" target="_blank">Rami Malek needs a treat</a><br>
+            <a href="https://www.youtube.com/watch?v=AIuWQ41m7ys" target="_blank">Calling Angie</a><br>
+            <a href="https://www.youtube.com/watch?v=fYcDQ11vI0M" target="_blank">Ben gets Botox</a>
+            </details>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>some more text...</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- End page content -->
+    </div>
+
+
+</body>
+</html>
